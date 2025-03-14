@@ -9,8 +9,7 @@ function App() {
   return (
     <>
     <BoxList />
-    <hr/>
-    
+ 
     <TodoList />
     </>
   )

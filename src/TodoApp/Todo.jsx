@@ -6,7 +6,7 @@ const Todo = ({ id, title, desc, removeTodo }) => {
     <ul>
         <li>Title: {title}</li>
         <li>Todo: {desc}</li>
-        <button onClick={() => removeTodo(id)}>Romove</button>
+        <button onClick={() => removeTodo(id)}>Remove</button>
     </ul>
    )
 }

@@ -11,8 +11,19 @@ const addTodo = (newTodo) => {
    setTodos(todos => [...todos, {...newTodo, id: uuidv4()}]) 
 } 
 
-const removeTodo = (id) => {
-    setTodos(todos.filter(todo => todo.id !== id));
+// const removeTodo = (id) => {
+//     //return a new array without the selected todo
+//     setTodos(todos.filter(todo => todo.id !== id));
+// } 
+function removeTodo(id) {
+    //return a new array without the selected todo
+    const result = [];
+    for(let i = 0; i < todos.length; i++){
+        if (todos[i].id !== id) {
+            result.push(todos[i]);
+        }
+    }
+    setTodos(result);
 } 
 
     return (
